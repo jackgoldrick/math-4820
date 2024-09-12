@@ -16,7 +16,7 @@
 	\maketitle
 	
 	
-\section{Problem 1 using Area of Squares}
+\section{Problem 1 by Dividing the Area of Squares}
 	
 	\begin{itemize}
 		\item Assume $\sqrt{3} = \frac{m}{n} : m > n \ \forall m,m \in \mathbb{Z}$, and m,n are co-prime
@@ -52,7 +52,45 @@
 		\end{itemize}
 		
 		
-		\item The original assumption was that these numbers m and n were co-prime to satisfy $\sqrt{3}$ as a rational number.  However, we have just shown that m and n are not co-prime for the numbers m and n to remain integers.  Thus we have raised a contradiction arising from the square root of three's rationality; therefor, the square root of three is irrational.   
+		
+		\item The original assumption was that these numbers m and n were co-prime to satisfy $\sqrt{3}$ as a rational number.  However, we have just shown that m and n are not co-prime for the numbers m and n to remain integers.  Thus we have raised a contradiction arising from the square root of three's rationality; therefor, the square root of three is irrational.  However, this was just to confirm that we are on the correct path.  To continue with the geometric proof we must show that the areas of every smaller sub square is also divisible by three and the infinite division is a consequence of $\sqrt{3}$'s irrationality.  Looking back on the substitution made for m with k we can see how this resulted in n being divisible by 3 as well.  Another substitution will result in showing that k is also divisible by three and so on, thus infinitely finding divisors through the same means we used prior.
+		
+		\item Now to show this is a consequence of irrationality, I will show what happens when we apply these ideas to any integer $k$ such that the t-root of $k$ is an integer $l$.  The reason this is the only case being considered is that any rational number with integers that do not fit this definition will be irrational due to their prime factorization and the well known fact that the $t^{th}$-root of a prime number is irrational.  Thus, any of the rationals outside the definition can be proved to be irrational in the same contradictory manner as three was considered.  Also these numbers have more than one prime fact to which is not raised to the proper exponent t. The result of having a proper exponent, t, will be shown by the same algorithm terminating in the following proof:
+		
+		\begin{itemize}
+			
+			\item Assume $\sqrt[t]{k} = \frac{m}{n} : m > n \ \forall k,l,m,n,t \in \mathbb{Z}$ with $l = \sqrt[t]{k}$, and m,n are co-prime
+			
+			\item Following a similar procedure we have:
+			
+			$$ k = \frac{m^t}{n^t} $$
+			
+			
+			$$ km^t = n^t $$
+			
+			
+			\item Substituting $l^t $ for $k$ we have:
+			
+			$$  l^{t}m^{t} = n^{t} $$
+			
+			
+			\item This implies that $n$ is divisible by $l$ thus we have:
+			
+			
+			$$ n = lj \ \forall j \in \mathbb{Z} $$
+			
+			$$  l^{t}m^{t} = l^{t}j^{t} $$
+			
+			$$ m^{t} = j^{t} $$ 
+			
+			$$ m = j $$
+			
+			\item Here we can se that m has no more common factors resulting in the termination of the algorithm, unlike with 3, where the algorithm kept repeating 3 as a common factor. This completes the proof that the square root of three is irrational. 
+			
+		\end{itemize}
+		
+		
+		  
 	\end{itemize}
 	
 	\begin{flushright}
