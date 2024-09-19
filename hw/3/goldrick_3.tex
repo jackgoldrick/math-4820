@@ -1,0 +1,118 @@
+\documentclass[]{report}
+
+% All Dependencies
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{wasysym}
+
+
+% Title Page
+\title{MATH 4820 - Homework 3}
+\author{Jack Reilly Goldrick}
+
+
+\begin{document}
+	\maketitle
+	
+	
+	\section{Problem 1}
+	
+	\subsection{Angle Trisection}
+	\begin{itemize}
+		
+		\item To begin we have the following equality:
+		
+		$$ \cos{3 \alpha}  = \cos{\theta} : $$
+		
+		\item Using the triple angle formula for Cosine we have:
+		
+		$$ 4 \cos^3{\alpha}  - 3  \cos{\alpha} = \cos{\theta} $$ 
+		
+		\item reducing the problem to its algebraic form; we have:
+		
+		$$ 4  y^3 - 3 y = c : y = \cos{\alpha} \land c = \cos{\theta}  $$
+		
+		\item Testing the value of $\alpha = \frac{\pi}{13}  \land \theta = \frac{\pi}{39} $ we  can construct an equilateral triangle with angle $c$ :
+		
+		$$ c = \cos{3 \alpha} $$
+		
+		$$ \cos^{-1}{c} = 3 \alpha $$
+		
+		\item Thus, we have an equilateral triangle with angle $\alpha$: 
+		
+		$$ \alpha = \frac{\cos^{-1}{c}}{3}$$ 
+		
+		
+		\item Since the angle is a given from the fourth bullet, we can trisect the angle given the algorithm above since we can compute the ratio of  cosine or its inverse with a constructible number. In this case, three and c are constructible implying alpha is as well.
+		
+	\begin{flushright}
+		\smiley{}
+	\end{flushright}
+
+		
+	\end{itemize}
+	
+	
+	
+\section{Problem 2}
+	
+	
+\begin{itemize}
+	\item This proof can be done multiple ways; either with straight edge and compass, or by understanding the constructible numbers as a ordered field.  Since, the construction of the field heavily trivializes the problem, I will show how it was done with straight edge and compass. For the sake of wordiness, I will assume the straight edge has an addition property of measuring the unit length only.  This assumption can be shown to be isomorphic to the rusty compass assumption.
+		
+	\item Creating a segment X and assigning unit length $l$, we can use the compass to construct Y:  a segment perpendicular to a line of length $2l$ using circles with radius  $2l$.  Thus the intersection will be  given as the zero element of both the segments. 
+	
+	\subitem-- The equilateral Triangle that results from this construction ensures that Y intersects X at  distance of $l$ from each of its constructed endpoints, which is the zero of the space that represents X.  Then using the straightedge, we can mark unit length on Segment Y.
+	
+	\item lets repeat this process for the left hand side of X and assign that a negative symbol $-$ (inverse-directional symbol) such that if you were to copy $-l$ from the position $l$  on X, one will arrive at the origin (mutual zero element). One can use the same construction for with compass to define the $-l$ for Y.
+	
+	
+	\item Now that we are able to measure unit length on each principle segment X and Y and define the origin, lets copy the unit lengths infinitely along X and Y.   Now let the measure, F,  of each Segment X, Y and c represent a natural number that could be paired with a  directional symbol; we can define length of a sum of segments by:
+	
+	$$ F: C \to \mathbb{N} | F(c l ) = c \ \ \forall c \in \mathbb{Z} $$
+		
+	\item So now if any polygon can fit in this space, its vertices must be defined by various pairs of measures on X and Y. Thus we have a direct implication that the segments that form the polygon from its vertices all have constructible measures.
+	
+	\item So now lets show that a polygon's area is constructible as a result of a triangle having constructible vertices.  This will be possible since it is well know from the definition of polygon that it can be decomposed into a sum of triangles.
+	
+	\item To begin with the more complicated, we can refer to how the straightedge and compass was used to divide a measure of 2 such that we could define an opposite direction and a midpoint, most importantly.  This same process can be done indefinitely to find an infinite number of smaller decimal lengths.  Now assuming we can measure as small as we need to we can add multiple smaller midpoints to find an arbitrary measure that is less than the unit and is constructible since it is derived from constructible preserving operations.  This decimal system of midpoints is isometrically isomorphic to the binary decimal system.  Therefore $\frac{1}{2}$ is constructible.
+	
+	\item Thus all that is left to consider is if we can show that any constructible Triangle has a construcible base and height.
+	
+	\item Lets look back at the equilateral triangle and bisect the angle associated with the vertex containing the highest measure on Y, connecting to the line X, resulting in a perpendicular segment parallel to Y.  We already know that any segment in the plane is constructible thus we know the height must be since we have a segment that represents it.  The base is also defined as a segment as well, through this same manner.  
+	
+	\item Since all elements of the Area definition are constructible we know that the resulting value must be constructible.
+	
+	\item Therefore since all  polygons in this plane are able to be defined the sum of triangles with constructible area, the area of a polygon will as well.
+	
+		\begin{flushright}
+		\smiley{}
+	\end{flushright}
+\end{itemize}
+	
+	
+\section{Problem 3}
+
+
+\begin{itemize}
+	\item For the sake of not copying and pasting the constructions from Problem 2. We will pick up, exactly where the proof ended with the lovely smiling face.
+	
+	\item  Lets look back at the operations that expanded the principle directions indefinitely giving us  our coordinate system and how it relates to copying a polygon in our space measured by the unit $l$ number system we defined in problem 2.  
+	
+		\begin{itemize}
+			\item If one were to treat polygons as a set of vertices, we could define a copy function that maps the vertices to another set such that the lengths are preserved.  
+			
+			\item This preservation of length is an isometric behavior of the copy function.  Thus copy will preserve the measure of area for any polygon in our coordinate system.  Therefore, no matter the location of the copy in our coordinate system, the area will be preserved thus being constructible after the morphism.
+		\end{itemize}
+	 
+\end{itemize}
+	
+		\begin{flushright}
+		\smiley{}
+	\end{flushright}
+	
+	
+\end{document}          
