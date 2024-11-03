@@ -1,0 +1,121 @@
+\documentclass[]{report}
+
+% All Dependencies
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{wasysym}
+
+
+% Title Page
+\title{MATH 4820 - Homework 7}
+\author{Jack Reilly Goldrick}
+
+
+\begin{document}
+	\maketitle
+
+\section{Problem 1}
+
+
+\begin{itemize}
+	\item Since $x$ is congruent to 1 modulo $m$ : $m \in \{2, 3, 4, 5, 6\} $, we can combine these congruence to the following using their least common multiple:
+	
+	
+	$$ x \equiv 1 \mod 60 $$
+	
+	
+	\item The following two equations are left over:
+	
+	$$ x \equiv 1 \mod 60 $$
+	
+	$$ \& $$
+
+	$$ x \equiv 0 \mod 7 $$
+	
+	
+	
+	\item Thus $x=61$
+	
+	
+	
+	
+\end{itemize}
+
+
+
+\newpage
+
+
+
+\section{Problem 2}
+
+
+\begin{itemize}
+	\item This problem requires two cases to be examined in order to see if the  system is compatible:
+	
+	\subitem[1.] $\gcd(a, b) = 1$
+	
+	\begin{itemize}
+		\item Since the difference of $a$ and $b$ is always an integer and every integer is divisible by the  multiplicative identity element, thus this case is trivially compatible $\forall a, b \in \mathbb{Z}: \gcd(a,b) = 1$
+	\end{itemize}
+	
+	\subitem[2.] $\gcd(a, b) \in \mathbb{Z}$
+	
+	
+	\begin{itemize}
+		\item To begin we have the following equalities for $a, b$, with the $\gcd(a, b) = z$:
+		
+		$$ a = zc, \ \forall c \in \mathbb{Z} $$
+		
+		$$ \& $$
+		
+		$$ b = zd, \ \forall c \in \mathbb{Z} $$
+		
+		
+		
+		\item substituting these values into the congruence compatibility relation we have:
+		
+		
+		$$ zd -zc = k_1 zd - k_2 zc $$
+		
+		
+		\item Factoring both sides we have:
+		
+		$$ z(d -c) = z(k_1 d - k_2 c) $$
+		
+		
+		\item  Since Both sides are divisible by the gcd, we can conclude that the system is compatible.
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	\end{itemize}
+	
+	
+	
+	
+\end{itemize}
+
+
+
+\newpage
+
+
+\section{Problem 3}
+
+
+\begin{itemize}
+	\item Yes the solution can be determined from the least significant digits provided.  The reason this is possible is due to the uniqueness provided by the Chinese Remainder Theorem.   All these bases are pairwise-compatible  since pairs can be generated such that the gcd of any pair is either 1 or a common factor between moduli like 2, 3, and 5.  Thus we can conclude that this entire system of congruences is compatible. Since we know this system is compatible, the CRT will guarantee a unique solution up to the lcm of the moduli.  Since the lcm is 2520 and $1000 < 2520$ we can conclude that we can find the specific number in question since it will be a unique solution to the Chinese Remainder Theorem which our problem can be interpreted through. 
+\end{itemize}
+
+
+
+\end{document}
